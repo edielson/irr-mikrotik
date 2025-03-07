@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Script for generating BGP filter for Mikrotik RouterOS
-# (c) 2023 Lee Hetherington <lee@edgenative.net>
+
 #
 import os
 import sys

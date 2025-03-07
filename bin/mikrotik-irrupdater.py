@@ -1,6 +1,3 @@
-# Copyright (c) 2023 - Lee Hetherington <lee@edgenative.net>
-# Script: mikrotik_irr_updater.py
-#
 # Usage: mikrotik-irrupdater.py chain_name config_file router_ip
 #
 # This script will take an input file in the format of the Mikrotik RouterOS API for a /routing/filter/rule
