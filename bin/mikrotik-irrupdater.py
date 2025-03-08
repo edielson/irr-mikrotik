@@ -1,4 +1,4 @@
-# Usage: mikrotik-irrupdater.py chain_name config_file router_ip
+# Usage: irr-mikrotik.py chain_name config_file router_ip
 #
 # This script will take an input file in the format of the Mikrotik RouterOS API for a /routing/filter/rule
 # and compare it with the version already on the router.  It's aim is to give you the ability to update IRR filters
@@ -15,7 +15,7 @@ import argparse
 # Where is everything installed?
 #
 
-path = "/usr/share/mikrotik-irrupdater"
+path = "/usr/share/irr-mikrotik"
 
 #
 # We want to take some inputs from the command line, such as the name of the route-filter chain

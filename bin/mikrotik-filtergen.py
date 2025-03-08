@@ -6,7 +6,7 @@ import os
 import sys
 
 # Set the path configuration variable here
-path = "/usr/share/mikrotik-irrupdater"
+path = "/usr/share/irr-mikrotik"
 
 def generate_ipv4_filter(slug, asn):
     with open(f"{path}/filters/as{asn}-{slug}-import-ipv4.txt", "w") as f:
@@ -42,7 +42,7 @@ def generate_ipv6_filter(slug, asn):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python3 mikrotik-filtergen.py <slug> <ASN>")
+        print("Usage: python3 irr-mikrotik.py <slug> <ASN>")
         sys.exit(1)
 
     slug = sys.argv[1]

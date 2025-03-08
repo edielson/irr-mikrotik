@@ -2,7 +2,7 @@
 # Script for generating BGP filter for Mikrotik RouterOS
 
 
-path=/usr/share/mikrotik-irrupdater
+path=/usr/share/irr-mikrotik
 
 # Check if the configuration file 'peers.conf' exists
 if [ ! -f $path/config/peers.conf ]; then
