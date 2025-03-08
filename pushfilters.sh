@@ -16,17 +16,17 @@ while IFS=',' read -r param1 param2 param3 param4; do
         if [ -n "$param4" ]; then
             if [ "$param4" = "ipv4" ]; then
                 # Run for IPv4 only
-                python3 $path/bin/mikrotik-irrupdater.py as$param1-$param2-import-ipv4 $path/filters/as$param1-$param2-import-ipv4.txt $param3
+                python3 $path/bin/irr-mikrotik.py as$param1-$param2-import-ipv4 $path/filters/as$param1-$param2-import-ipv4.txt $param3
             elif [ "$param4" = "ipv6" ]; then
                 # Run for IPv6 only
-                python3 $path/bin/mikrotik-irrupdater.py as$param1-$param2-import-ipv6 $path/filters/as$param1-$param2-import-ipv6.txt $param3
+                python3 $path/bin/irr-mikrotik.py as$param1-$param2-import-ipv6 $path/filters/as$param1-$param2-import-ipv6.txt $param3
             else
                 echo "Invalid value for session affinity: $param4"
             fi
         else
             # Run for both IPv4 and IPv6
-            python3 $path/bin/mikrotik-irrupdater.py as$param1-$param2-import-ipv4 $path/filters/as$param1-$param2-import-ipv4.txt $param3
-            python3 $path/bin/mikrotik-irrupdater.py as$param1-$param2-import-ipv6 $path/filters/as$param1-$param2-import-ipv6.txt $param3
+            python3 $path/bin/irr-mikrotik.py as$param1-$param2-import-ipv4 $path/filters/as$param1-$param2-import-ipv4.txt $param3
+            python3 $path/bin/irr-mikrotik.py as$param1-$param2-import-ipv6 $path/filters/as$param1-$param2-import-ipv6.txt $param3
         fi
     fi
 done < $path/config/sessions.conf
