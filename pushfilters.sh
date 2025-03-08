@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script for generating BGP filter for Mikrotik RouterOS
 
-path=/usr/share/mikrotik-irrupdater
+path=/usr/share/irr-mikrotik
 
 # Check if the configuration file exists
 if [ ! -f $path/config/sessions.conf ]; then
